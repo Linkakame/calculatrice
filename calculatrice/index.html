@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div id="app"> 
+        <button v-on:click="update(9)">9</button>
+        <button v-on:click="update(8)">8</button>
+        <button v-on:click="update(7)">7</button>
+        <br><br>
+        <button v-on:click="update(6)">6</button>
+        <button v-on:click="update(5)">5</button>
+        <button v-on:click="update(4)">4</button>
+        <br><br>
+        <button v-on:click="update(3)">3</button>
+        <button v-on:click="update(2)">2</button>
+        <button v-on:click="update(1)">1</button>
+        <br><br>
+        <button v-on:click="addition()">+</button>
+        <button v-on:click="update(0)">0</button>
+        <button v-on:click="soustraction()">-</button>
+        <button v-on:click="multiplication()">*</button>
+        <button v-on:click="division()">/</button>
+        <button v-on:click="modulo()">%</button>
+        <br><br>
+        <label>Resultat</label>
+        <button v-on:click ="calculresultat()">=</button>
+        <label>{{ resultat }}</label>
+    </div>
+
+<script src="https://unpkg.com/vue@3"></script>
+<script src="calculatrice.js"></script>
+</body>
+</html>
